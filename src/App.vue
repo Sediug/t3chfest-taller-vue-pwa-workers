@@ -4,7 +4,6 @@
       <span>Vue.js PWA. Taller del techfest Sebas</span>
     </header>
     <main>
-      <img src="./assets/logo.png" alt="Vue.js PWA">
       <router-view></router-view>
     </main>
   </div>
