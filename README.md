@@ -1,6 +1,6 @@
-# myapp
+# t3chfest2018
 
-> A Vue.js project
+> Offline first PWA. T3chfest 2018 workshop with Kike Navalon
 
 ## Build Setup
 
@@ -16,12 +16,3 @@ npm run build
 
 # build for production and view the bundle analyzer report
 npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
