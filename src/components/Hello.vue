@@ -43,13 +43,13 @@ li {
   text-align: center;
 }
 
-li.name {
+li .name {
   color: #444;
   display: block;
   font-size: 20px;
 }
 
-li.name {
+li .email {
   color: rgb(180, 152, 25);
   display: block;
   font-size: 12px;
