@@ -1,5 +1,7 @@
 # t3chfest2018
 
+Progresive Web App with Service Workers, Vue.js and Firebase
+
 > Offline first PWA. T3chfest 2018 workshop with Kike Navalon
 
 ## Build Setup
