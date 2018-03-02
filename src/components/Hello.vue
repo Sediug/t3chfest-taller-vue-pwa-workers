@@ -1,27 +1,28 @@
 <template>
   <div class="hello">
     <ul>
-      <li v-for="contact in contacts" :key="contact">
-        <div class="name">{{contact.name}}<div>
-        <div class="email">{{contact.email}}<div>
+      <li v-for="(contact, index) in contacts" :key="`contact-${ index }`">
+        <div class="name">{{contact.name}}</div>
+        <div class="email">{{contact.email}}</div>
       </li>
     </ul>
   </div>
 </template>
 
 <script>
+import { firestore } from 'firebase'
+
 export default {
   name: 'hello',
   data () {
     return {
-      contacts: [{
-        name: 'andrea',
-        email: 'andrea@dad.com'
-      }, {
-        name: 'paco',
-        email: 'paco@dad.com'
-      }]
+      contacts: []
     }
+  },
+  mounted () {
+    firestore().collection('contacts').get().then(snapshoots => {
+      snapshoots.forEach(doc => this.contacts.push(doc.data()))
+    })
   }
 }
 </script>
